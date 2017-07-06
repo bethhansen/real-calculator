@@ -18,4 +18,8 @@ $(function() {
     var result = add(number1, number2);
     $("#output").text(result);
   });
+  $("form#add").submit(function(event) {
+    event.preventDefault();
+    var number1 =parseInt($("add1").val());
+  });
 });
